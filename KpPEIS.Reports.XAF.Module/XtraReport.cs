@@ -9,5 +9,9 @@ namespace KpPEIS.Reports.XAF.Module {
     public XtraReport() {
       InitializeComponent();
     }
+
+    private void XtraReport_BeforePrint(object sender, CancelEventArgs e) {
+      Console.WriteLine("打印前输出！");
+    }
   }
 }
